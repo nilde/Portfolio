@@ -212,7 +212,7 @@ componentDidMount(){
 
 
     return (
-      <Text style={{ textAlign: "left", fontFamily: "Montserrat", alignSelf: "flex-start", fontWeight: "400", fontSize: 16 }}>
+      <Text style={{paddingHorizontal:20, textAlign: "left", fontFamily: "Montserrat", alignSelf: "flex-start", fontWeight: "400", fontSize: 16 }}>
         {!!textToIterate &&
           textToIterate.map((item, index) => (
             <TextUnderlayedSearch
@@ -499,16 +499,16 @@ componentDidMount(){
                   <LittleSeparator />
                   <View style={{ alignSelf: "center", width: "90%", backgroundColor: "rgba(42,187,153,0.1)", borderRadius: 10 }}>
 
-                    <View style={{ alignItems: "center", flexDirection: "row", justifyContent: "flex-start", height: 90 }}>
-                      <View style={{  justifyContent: "center", alignItems: "center", width: "15%", height: 70 }}>
-                        <View style={{overflow: "hidden", width: 60, height: 60, borderRadius: 10 }}>
+                    <View style={{width:"100%", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", height: 90 }}>
+                      <View style={{marginLeft:20,  justifyContent: "center", width: 80, height: 80 }}>
+                        <View style={{overflow: "hidden", width: "80%", height: "80%", borderRadius: 10 }}>
                           <Image
                             source={imageRealtions[item.title]}
-                            style={{ width: "100%", height: "100%", resizeMode: "cover",borderRadius:10 }}
+                            style={{ width: "100%", height: "100%", resizeMode: "",borderRadius:10 }}
                           />
                         </View>
                       </View>
-                      <View style={{ width: "85%", height: 70 }}>
+                      <View style={{width: "85%", height: 70 }}>
                         <Text style={{ color: "#000", fontFamily: "Montserrat", textAlign: "left" }}>
                           {item.title}
                         </Text>

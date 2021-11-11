@@ -5,7 +5,7 @@ import MediumSeparator from './MediumSeparator'
 function App(props) {
   window.scrollTo(0,0)
   return (
-    <View style={{position:"absolute",top:0,width:"100%",backgroundColor:"#fff"}}>
+    <View style={{overflowY:"scroll", position:"fixed",top:0,width:"100%",backgroundColor:"#fff"}}>
   <BigSeparator />
 
 <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 24,  fontWeight: "700" }}>
