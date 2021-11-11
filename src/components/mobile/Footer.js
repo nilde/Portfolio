@@ -7,7 +7,7 @@ import BigSeparator from './BigSeparator'
 
 function Footer() {
   return (
-    <View>
+    <View style={{zIndex:99}}>
       <Image
         source={footerWave}
         style={{ width: "100%", height: 100, resizeMode: "cover" }}

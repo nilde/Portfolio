@@ -71,7 +71,7 @@ export default class App extends Component {
   }
 
   toggleActiveScreen(newScreen) {
-   
+  window.scrollTo(0,0)
     var toggleScreen = screenRealtions[newScreen]
 
     this.setState({

@@ -434,7 +434,7 @@ export default class App extends Component {
 
     return (
       <>
-        <BigSeparator />
+
         <Footer />
       </>
     )
@@ -598,16 +598,20 @@ export default class App extends Component {
     return (
       <View style={{ width: "100%", height: "100%" }}>
 
-        {!this.state.activeDetails && true &&
+        {!this.state.activeDetails &&
+          <>
           <SectionList
             onViewableItemsChanged={() => this.generateOffsets()}
             sections={this.DATA}
             SectionSeparatorComponent={() => this.renderSectionSepator()}
             ListHeaderComponent={() => this.renderListHeader()}
-            ListFooterComponent={() => this.renderListFooter()}
+            //ListFooterComponent={() => this.renderListFooter()}
             renderSectionHeader={(item) => this.renderSectionHeader(item)}
             renderItem={(item) => this.renderItem(item)}
           />
+          <BigSeparator/>
+          <Footer/>
+          </>
         }
 
 
