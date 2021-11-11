@@ -171,7 +171,8 @@ export default class App extends Component {
       queryResults: [],
       appId: window.location.pathname.split("/").pop(),
       activeSection: "",
-      pageOffset: 0
+      pageOffset: 0,
+      activeSearch: false
     }
     window.scrollTo(0, 0)
 
@@ -256,6 +257,7 @@ export default class App extends Component {
     if (query.length == 0) {
 
       this.setState({
+        activeSearch: false,
         query: "",
         queryResults: []
       }, () => setTimeout(() => window.scrollTo(0, 0)), 100)
@@ -284,6 +286,7 @@ export default class App extends Component {
       }
 
       this.setState({
+        activeSearch: true,
         query: query,
         queryResults: queryResults
       })
@@ -494,82 +497,82 @@ export default class App extends Component {
           isScreenshotItem ?
             //Item with carrousel for screenshots
             <View style={{ width: "100%" }}>
-            <LittleSeparator/>
+              <LittleSeparator />
               <ScrollView horizontal style={{ width: "100%", height: "100%" }}>
-                { screenshots[this.state.appId][0] &&
-                <Pressable 
-                onPress={()=>this.manageItemPress({
-                    title:"Captura 1",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][0]
-                  })}
-                  onLongPress={()=>this.manageItemPress({
-                    title:"Captura 1",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][0]
-                  })}
-                style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20,overflow:"hidden", borderRadius: 10 }}>
-                <Image style={{ width: 100, height: 150,borderRadius:10, resizeMode: "cover" }}
-                source={ screenshots[this.state.appId][0]}
-              />
-                </Pressable>
-                }
-                { screenshots[this.state.appId][1] &&
+                {screenshots[this.state.appId][0] &&
                   <Pressable
-                  onPress={()=>this.manageItemPress({
-                    title:"Captura 2",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][1]
-                  })}
-                  onLongPress={()=>this.manageItemPress({
-                    title:"Captura 2",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][1]
-                  })}
-                   style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20,overflow:"hidden", borderRadius: 10 }}>
-                <Image style={{ width: 100, height: 150,borderRadius:10, resizeMode: "cover" }}
-                source={ screenshots[this.state.appId][1]}
-              />
-                </Pressable>
+                    onPress={() => this.manageItemPress({
+                      title: "Captura 1",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][0]
+                    })}
+                    onLongPress={() => this.manageItemPress({
+                      title: "Captura 1",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][0]
+                    })}
+                    style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20, overflow: "hidden", borderRadius: 10 }}>
+                    <Image style={{ width: 100, height: 150, borderRadius: 10, resizeMode: "cover" }}
+                      source={screenshots[this.state.appId][0]}
+                    />
+                  </Pressable>
                 }
-                { screenshots[this.state.appId][2] &&
+                {screenshots[this.state.appId][1] &&
                   <Pressable
-                  onPress={()=>this.manageItemPress({
-                    title:"Captura 3",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][2]
-                  })}
-                  onLongPress={()=>this.manageItemPress({
-                    title:"Captura 3",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][2]
-                  })}
-                   style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20,overflow:"hidden", borderRadius: 10 }}>
-                <Image style={{ width: 100, height: 150,borderRadius:10, resizeMode: "cover" }}
-                source={ screenshots[this.state.appId][2]}
-              />
-                </Pressable>
+                    onPress={() => this.manageItemPress({
+                      title: "Captura 2",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][1]
+                    })}
+                    onLongPress={() => this.manageItemPress({
+                      title: "Captura 2",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][1]
+                    })}
+                    style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20, overflow: "hidden", borderRadius: 10 }}>
+                    <Image style={{ width: 100, height: 150, borderRadius: 10, resizeMode: "cover" }}
+                      source={screenshots[this.state.appId][1]}
+                    />
+                  </Pressable>
                 }
-                { screenshots[this.state.appId][3] &&
+                {screenshots[this.state.appId][2] &&
                   <Pressable
-                  onPress={()=>this.manageItemPress({
-                    title:"Captura 4",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][3]
-                  })}
-                  onLongPress={()=>this.manageItemPress({
-                    title:"Captura 4",
-                    subtitle:"La imagen corresponde a la captura de pantalla de la App Store",
-                    image:screenshots[this.state.appId][3]
-                  })}
-                   style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20,overflow:"hidden", borderRadius: 10 }}>
-                <Image style={{ width: 100, height: 150,borderRadius:10, resizeMode: "cover" }}
-                source={ screenshots[this.state.appId][3]}
-              />
-                </Pressable>
+                    onPress={() => this.manageItemPress({
+                      title: "Captura 3",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][2]
+                    })}
+                    onLongPress={() => this.manageItemPress({
+                      title: "Captura 3",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][2]
+                    })}
+                    style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20, overflow: "hidden", borderRadius: 10 }}>
+                    <Image style={{ width: 100, height: 150, borderRadius: 10, resizeMode: "cover" }}
+                      source={screenshots[this.state.appId][2]}
+                    />
+                  </Pressable>
+                }
+                {screenshots[this.state.appId][3] &&
+                  <Pressable
+                    onPress={() => this.manageItemPress({
+                      title: "Captura 4",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][3]
+                    })}
+                    onLongPress={() => this.manageItemPress({
+                      title: "Captura 4",
+                      subtitle: "La imagen corresponde a la captura de pantalla de la App Store",
+                      image: screenshots[this.state.appId][3]
+                    })}
+                    style={{ width: 100, height: 150, backgroundColor: "#f2f2f2", marginLeft: 20, overflow: "hidden", borderRadius: 10 }}>
+                    <Image style={{ width: 100, height: 150, borderRadius: 10, resizeMode: "cover" }}
+                      source={screenshots[this.state.appId][3]}
+                    />
+                  </Pressable>
                 }
               </ScrollView>
-              <LittleSeparator/>
+              <LittleSeparator />
             </View>
             :
             //Item with title and subtitle
@@ -591,6 +594,12 @@ export default class App extends Component {
 
   }
 
+  toggleActiveSearch() {
+    this.setState({
+      activeSearch: !this.state.activeSearch
+    })
+  }
+
 
 
 
@@ -600,17 +609,18 @@ export default class App extends Component {
 
         {!this.state.activeDetails &&
           <>
-          <SectionList
-            onViewableItemsChanged={() => this.generateOffsets()}
-            sections={this.DATA}
-            SectionSeparatorComponent={() => this.renderSectionSepator()}
-            ListHeaderComponent={() => this.renderListHeader()}
-            //ListFooterComponent={() => this.renderListFooter()}
-            renderSectionHeader={(item) => this.renderSectionHeader(item)}
-            renderItem={(item) => this.renderItem(item)}
-          />
-          <BigSeparator/>
-          <Footer/>
+          {this.renderListHeader()}
+            <SectionList
+              onViewableItemsChanged={() => this.generateOffsets()}
+              sections={this.DATA}
+              SectionSeparatorComponent={() => this.renderSectionSepator()}
+              //ListHeaderComponent={() => this.renderListHeader()}
+              //ListFooterComponent={() => this.renderListFooter()}
+              renderSectionHeader={(item) => this.renderSectionHeader(item)}
+              renderItem={(item) => this.renderItem(item)}
+            />
+            <BigSeparator />
+            <Footer />
           </>
         }
 
@@ -641,37 +651,71 @@ export default class App extends Component {
         }
         {
           this.state.pageOffset > 0 &&
+          <>
+            {!this.state.activeSearch &&
+              <View style={{ width: "100%", maxWidth: "100%", justifyContent: "space-between", flexDirection: "row", alignItems: "center", boxShadow: "0px 3px 2px rgba(0,0,0,0.05)", position: "fixed", top: 0, width: "100%", height: 60, backgroundColor: "#fff" }}>
+                <View style={{ width: "80%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                  <Pressable
+                    onPress={() => this.setState({ activeReturnToHome: true })}
+                    onLongPress={() => this.setState({ activeReturnToHome: true })}
+                    style={{ marginTop: 5, justifyContent: "center", alignItems: "center", width: 50, height: 50, }}>
+                    <Image style={{ width: 30, height: 30, resizeMode: "contain" }}
+                      source={YellowLogo}
+                    />
+                  </Pressable>
 
-          <View style={{ width: "100%", maxWidth: "100%", justifyContent: "space-between", flexDirection: "row", alignItems: "center", boxShadow: "0px 3px 2px rgba(0,0,0,0.05)", position: "fixed", top: 0, width: "100%", height: 60, backgroundColor: "#fff" }}>
-            <View style={{ width: "80%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-              <Pressable
-                onPress={() => this.setState({ activeReturnToHome: true })}
-                onLongPress={() => this.setState({ activeReturnToHome: true })}
-                style={{ marginTop: 5, justifyContent: "center", alignItems: "center", width: 50, height: 50, }}>
-                <Image style={{ width: 30, height: 30, resizeMode: "contain" }}
-                  source={YellowLogo}
-                />
-              </Pressable>
-              <View style={{ overflow: "hidden", height: "100%", width: "80%", alignItems: "center", justifyContent: "center" }}>
-                <TextUnderlayedSection
-                  fontSize={20}
-                  type={"TITLE"}
-                  fontWeight={700}
-                  text={this.state.activeSection}
-                />
+
+                  <View style={{ overflow: "hidden", height: "100%", width: "80%", alignItems: "center", justifyContent: "center" }}>
+                    <TextUnderlayedSection
+                      fontSize={20}
+                      type={"TITLE"}
+                      fontWeight={700}
+                      text={this.state.activeSection}
+                    />
+                  </View>
+                </View>
+
+                <Pressable
+                  onPress={() => this.toggleActiveSearch()}
+                  onLongPress={() => this.toggleActiveSearch()}
+                  style={{ marginTop: 5, justifyContent: "center", alignItems: "center", width: 50, height: 50, }}>
+                  <Image style={{ width: 20, height: 20, resizeMode: "contain", tintColor: "#00a082" }}
+                    source={IconSearch}
+                  />
+                </Pressable>
+
+
+
               </View>
-            </View>
+            }
+            {this.state.activeSearch &&
+              <View style={{ width: "100%", maxWidth: "100%", justifyContent: "space-between", flexDirection: "row", alignItems: "center", boxShadow: "0px 3px 2px rgba(0,0,0,0.05)", position: "fixed", top: 0, width: "100%", height: 60, backgroundColor: "#fff" }}>
+                <View style={{ width: "80%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                  <Pressable
+                    onPress={() => this.setState({ activeReturnToHome: true })}
+                    onLongPress={() => this.setState({ activeReturnToHome: true })}
+                    style={{ marginTop: 5, justifyContent: "center", alignItems: "center", width: 50, height: 50, }}>
+                    <Image style={{ width: 30, height: 30, resizeMode: "contain" }}
+                      source={YellowLogo}
+                    />
+                  </Pressable>
 
-            <Pressable
-              onPress={() => this.setState({ activeReturnToHome: true })}
-              onLongPress={() => this.setState({ activeReturnToHome: true })}
-              style={{ marginTop: 5, justifyContent: "center", alignItems: "center", width: 50, height: 50, }}>
-              <Image style={{ width: 20, height: 20, resizeMode: "contain",tintColor:"#00a082" }}
-                source={IconSearch}
-              />
-            </Pressable>
 
-          </View>
+
+                  <Pressable
+                    onPress={() => this.toggleActiveSearch()}
+                    onLongPress={() => this.toggleActiveSearch()}
+                    style={{ marginTop: 5, justifyContent: "center", alignItems: "center", width: 50, height: 50, }}>
+                    <Image style={{ width: 20, height: 20, resizeMode: "contain", tintColor: "#00a082" }}
+                      source={Close}
+                    />
+                  </Pressable>
+                </View>
+
+
+              </View>
+            }
+          </>
         }
         {
           this.state.activeDetails &&
@@ -680,15 +724,15 @@ export default class App extends Component {
             {
               !!this.state.activeItem.image &&
               <>
-              <Image style={{alignSelf:"center", width: 400, height: 400,borderRadius:10, resizeMode: "contain" }}
-                source={this.state.activeItem.image}
-              />
-              <View style={{height:30}}/>
+                <Image style={{ alignSelf: "center", width: 400, height: 400, borderRadius: 10, resizeMode: "contain" }}
+                  source={this.state.activeItem.image}
+                />
+                <View style={{ height: 30 }} />
               </>
             }
 
             <Text style={{ fontFamily: "Montserrat", fontWeight: "700", fontSize: 24, paddingHorizontal: 20, textAlign: "center" }}>
-              {this.state.activeItem.ranking ? this.state.activeItem[0] : this.state.activeItem.title? this.state.activeItem.title:Object.keys(this.state.activeItem)[0]}
+              {this.state.activeItem.ranking ? this.state.activeItem[0] : this.state.activeItem.title ? this.state.activeItem.title : Object.keys(this.state.activeItem)[0]}
             </Text>
             <LittleSeparator />
             {this.state.activeItem.ranking &&
@@ -700,7 +744,7 @@ export default class App extends Component {
               </>
             }
             <Text style={{ fontFamily: "Montserrat", fontWeight: "400", fontSize: 16, paddingHorizontal: 20, color: "gray", textAlign: "center" }}>
-              {this.state.activeItem.ranking ? this.state.activeItem[2] : this.state.activeItem.subtitle? this.state.activeItem.subtitle:Object.values(this.state.activeItem)[0]}
+              {this.state.activeItem.ranking ? this.state.activeItem[2] : this.state.activeItem.subtitle ? this.state.activeItem.subtitle : Object.values(this.state.activeItem)[0]}
             </Text>
 
 
