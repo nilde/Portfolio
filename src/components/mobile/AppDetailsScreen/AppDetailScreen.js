@@ -338,14 +338,14 @@ export default class App extends Component {
   renderListHeader() {
 
     return (
-      <View style={{ overflow: "visible", width: "100%", height: 270, }}>
+      <View style={{ overflow: "visible", width: "100%", }}>
 
-        <View style={{ width: "100%", height: 200, backgroundColor: "#EDEDED" }}>
+        <View style={{ width: "100%",  backgroundColor: "#fff" }}>
           {/**change that for accurate image */}
-          <Image style={{ position: "absolute", width: "100%", height: "100%", resizeMode: "cover" }}
+          <Image style={{ position: "absolute",top:0, width: "100%", height: 200, resizeMode: "cover" }}
             source={ImagesHeader[this.state.appId]}
           />
-          <div style={{ position: "absolute", width: "100%", height: "100%", backgroundColor: "transparent", background: "linear-gradient(rgba(0,0,0,0.5),transparent)" }}>
+          <div style={{ position: "absolute", width: "100%", height:200, backgroundColor: "transparent", background: "linear-gradient(rgba(0,0,0,0.5),transparent)" }}>
 
           </div>
 
@@ -414,7 +414,7 @@ export default class App extends Component {
         </View>
 
 
-        <View style={{ flexDirection: "row", position: "absolute", bottom: 0, background: "#F2f2f2", borderRadius: 100, position: "absolute", width: "95%", alignSelf: "center", height: 30 }}>
+        <View style={{marginTop:30, flexDirection: "row", background: "#F2f2f2", borderRadius: 100,width: "95%", alignSelf: "center", height: 30 }}>
           <View style={{ width: "10%", justifyContent: "center", alignItems: "center", height: "100%" }}>
             <Image style={{ width: 15, height: 15, resizeMode: "contain" }}
               source={IconSearch}
