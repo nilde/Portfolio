@@ -27,7 +27,7 @@ export default function App(props) {
       <View style={{width:"100%"}}>
         <LittleSeparator />
         <Text style={{ color: "#ffc244", textAlign: "center", fontWeight: "600", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 16 }}>
-          Account
+          Información básica
         </Text>
         <LittleSeparator />
         <View style={{ alignSelf: "center", height: 5, backgroundColor: "#ffc244", width: "70%" }} />
@@ -72,39 +72,54 @@ export default function App(props) {
       <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
       <LittleSeparator />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
-        Contraseña
+        Trabajando en Buyness como side-project
       </Text>
       <View style={{ height: 10 }} />
-      <Text style={{ fontWeight: "bold", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
-        ●●●●●●
+      <Text
+      onPress={()=>window.location.href="https://www.buynessapp.com"}
+      onLongPress={()=>window.location.href="https://www.buynessapp.com"} 
+       style={{ textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
+      https://www.buynessapp.com
       </Text>
       <LittleSeparator />
       <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
       <LittleSeparator />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
-        Repositorio
+        Github
       </Text>
       <View style={{ height: 10 }} />
-      <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
-        http://
+      <Text
+      onPress={()=>window.location.href="https://www.github.com/nilde"}
+      onLongPress={()=>window.location.href="https://www.github.com/nilde"} 
+       style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
+      https://www.github.com/nilde
       </Text>
       <LittleSeparator />
       <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
       <LittleSeparator />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
-        Código promocional
+        Estudios
       </Text>
       <View style={{ height: 10 }} />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
-        GLOVO2021
+        Licenciado en Ingenieria Informática en la UAB (2015-2019) y Máster universitario de Diseño de Interacción y Experiencia de Usuario (UX) (2022)
       </Text>
       <LittleSeparator />
       <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
       <MediumSeparator />
-      <Text style={{ fontWeight: "600", textAlign: "right", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#00a082" }}>
+      <Text style={{marginLeft:20, fontWeight: "600", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#00a082" }}>
         Gracias por vuestro tiempo
       </Text>
       <MediumSeparator />
+      <Pressable
+      onPress={()=>props.closeModal()}
+      onLongPress={()=>props.closeModal()}
+       style={{ boxShadow: "0px 2px 5px rgba(0,0,0,0.1)", alignSelf: "center", minWidth: 120, justifyContent: "center", alignItems: "center", paddingHorizontal: 60, paddingVertical: 20, backgroundColor: "#00a082", borderRadius: 100, width: "90%" }}>
+              <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "700", fontSize: 16 }}>
+                Volver al inicio
+              </Text>
+            </Pressable>
+            <MediumSeparator />
       <Pressable
         onPress={props.closeModal}
         onLongPress={props.closeModal}

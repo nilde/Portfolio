@@ -3,9 +3,9 @@ import LittleSeparator from './LittleSeparator'
 import outerMaskLeft from '../../images/outer-mask-left.svg';
 import outerMaskCenter from '../../images/outer-mask-center.svg';
 import outerMaskRight from '../../images/outer-mask-right.svg';
-import innerMaskLeft from '../../images/inner-mask-left.png';
-import innerMaskCenter from '../../images/inner-mask-center.png';
-import innerMaskRight from '../../images/inner-mask-right.png';
+import innerMaskLeft from '../../images/img2.webp';
+import innerMaskCenter from '../../images/img3.webp';
+import innerMaskRight from '../../images/img1.webp';
 
 const images = {
   LEFT: {
@@ -45,6 +45,7 @@ function App(props) {
             source={images[props.type].outer}
             style={{ position: "absolute", width: sizeGreen, height: sizeGreen, resizeMode: "contain" }}
           />
+         
           <Image
             source={images[props.type].inner}
             style={{ marginTop: marginInner, position: "absolute", width: sizeBlack, height: sizeBlack, resizeMode: "contain" }}
@@ -52,17 +53,27 @@ function App(props) {
         </View>
       </View>
 
-      <Text style={{fontFamily:"Montserrat", fontSize: 24, fontWeight: "700" }}>
+      <Text style={{ fontFamily: "Montserrat", fontSize: 24, fontWeight: "700" }}>
         {props.title}
       </Text>
-      <View style={{height:10}}/>
-      <Text style={{fontFamily:"Montserrat",textAlign: "center", fontSize: 14,paddingHorizontal:50, fontWeight: "400" }}>
+      <View style={{ height: 10 }} />
+      <Text style={{ fontFamily: "Montserrat", textAlign: "center", fontSize: 14, paddingHorizontal: 50, fontWeight: "400" }}>
         {props.subtitle}
       </Text>
       <LittleSeparator />
-      <Pressable style={{boxShadow: "0px 2px 5px rgba(0,0,0,0.1)", alignSelf: "center", minWidth: 120, justifyContent: "center", alignItems: "center", paddingHorizontal: 60, paddingVertical: 20, backgroundColor: "#00a082", borderRadius: 100 }}>
-        <Text style={{fontFamily:"Montserrat", color: "#fff", fontWeight: "700", fontSize: 14 }}>
-          Contactar
+      <Pressable
+        onPress={(e) => {
+          window.location.href = "mailto:nildomene@gmail.com";
+          e.preventDefault();
+        }}
+        onLongPress={(e) => {
+          window.location.href = "mailto:nildomene@gmail.com";
+          e.preventDefault();
+        }}
+
+        style={{ boxShadow: "0px 2px 5px rgba(0,0,0,0.1)", alignSelf: "center", minWidth: 120, justifyContent: "center", alignItems: "center", paddingHorizontal: 60, paddingVertical: 20, backgroundColor: "#00a082", borderRadius: 100 }}>
+        <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "700", fontSize: 14 }}>
+          Contacta conmigo
         </Text>
       </Pressable>
 

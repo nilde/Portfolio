@@ -11,7 +11,7 @@ const CIRCULAR=1000
 const BUBBLE_SIZE=120
 
 const relations={
-  "Habilidades":Skills,
+  "UX":Skills,
   "Estudios":Knowledges,
   "Cómo se hizo?":Made,
   "Lo que sea":Magic
@@ -52,8 +52,14 @@ scale:this.state.startValue
   }]
 }}>
     <Pressable 
-    onPress={()=>this.props.toggleActiveScreen("whatEver")}
-    onLongPress={()=>this.props.toggleActiveScreen("whatEver")}
+    onPress={(e)=>{
+      this.props.toggleActiveScreen("whatEver");
+      window.location.href = "mailto:nildomene@gmail.com";
+                e.preventDefault();}}
+    onLongPress={(e)=>{
+      this.props.toggleActiveScreen("whatEver")
+      window.location.href = "mailto:nildomene@gmail.com";
+                e.preventDefault();}}
     
     onHoverIn={()=>this.scaleIn()}
     onHoverOut={()=>this.scaleOut()}

@@ -4,7 +4,7 @@ import Made from '../../../images/made.png'
 import Skills from '../../../images/skills.png'
 import Magic from '../../../images/magic.png'
 import AboutMe from '../../../images/about-me.png'
-import More from "../../../images/more.png"
+import More from "../../../images/logo_app_blanco_fondo.png"
 import NextJob from "../../../images/nextJob.png"
 import Prototypes from "../../../images/prototypes.png"
 import Share from "../../../images/share.png"
@@ -15,12 +15,12 @@ const CIRCULAR = 1000
 const BUBBLE_SIZE = 90
 
 const relations = {
-  "Habilidades": Skills,
+  "UX": Skills,
   "Sobre mí": AboutMe,
   "Cómo se hizo?": Made,
   "Lo que sea": Magic,
-  "Más": More,
-  "Próximo trabajo": NextJob,
+  "Buyness": More,
+  "Estoy buscando": NextJob,
   "Prototipos": Prototypes,
 
 }
@@ -28,11 +28,11 @@ const relations = {
 
 
 const relationsScreen = {
-  "Habilidades": "habilities",
+  "UX": "habilities",
   "Sobre mí": "aboutMe",
   "Cómo se hizo?": "howWasMade",
-  "Más": "more",
-  "Próximo trabajo": "nextJob",
+  "Buyness": "buyness",
+  "Estoy buscando": "nextJob",
   "Prototipos": "prototypes",
 
 }
@@ -194,9 +194,9 @@ export default class Bubble extends Component {
               height: BUBBLE_SIZE,
               backgroundColor: "#fff"
             }}>
-            <View style={{ justifyContent: "center", alignItems: "center", width: "50%", height: 45 }}>
+            <View style={{ justifyContent: "center", alignItems: "center", width: "50%", height: 40 }}>
               <Image
-                style={{ flex: 1, width: 40, height: 40, resizeMode: "contain" }}
+                style={{ width: 35, height: 35, resizeMode: "contain" }}
                 source={relations[this.props.title]}
               />
             </View>

@@ -15,12 +15,12 @@ function App(props) {
     <View style={{ width: "100%", height: 320, alignItems: "center", alignSelf: "center", justifyContent: "center", alignItems: "center" }}>
 
 
-      <Bubble position={"TOP_LEFT"} title={"Habilidades"} {...props} />
+      <Bubble position={"TOP_LEFT"} title={"UX"} {...props} />
       <Bubble position={"TOP_RIGHT"} title={"Sobre mí"} {...props} />
-      <Bubble position={"LEFT"} title={"Más"} {...props} />
+      <Bubble position={"LEFT"} title={"Buyness"} {...props} />
 
       <Bubble position={"RIGHT"} title={"Prototipos"} {...props} />
-      <Bubble position={"BOTTOM_LEFT"} title={"Próximo trabajo"} {...props} />
+      <Bubble position={"BOTTOM_LEFT"} title={"Estoy buscando"} {...props} />
       <Bubble position={"BOTTOM_RIGHT"} title={"Cómo se hizo?"} {...props} />
       <BubbleBig title={"Lo que sea"} {...props} />
 

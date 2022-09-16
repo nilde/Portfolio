@@ -4,6 +4,7 @@ import { View, StyleSheet, Text } from "react-native";
 function App() {
   return (
     <View style={styles.titleContainer}>
+      <View style={{height:30}}/>
       <Text style={styles.titleLight}>
         Explora{" "}
       

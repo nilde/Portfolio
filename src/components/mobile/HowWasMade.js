@@ -76,22 +76,28 @@ render(){
        </Text>
        <MediumSeparator />
        <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14,  fontWeight: "400",color:"gray" }}>
-     Deseo que les guste ver todo el proceso y que me den la oportunidad de trabajar en esta fantástica empresa.  
+     Deseo que les guste ver todo el proceso tanto como yo he disfrutado realizando esta web.
      </Text>
        <MediumSeparator />
        <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14,  fontWeight: "400",color:"gray" }}>
     Atentamente,{"\n"}Nil
      </Text>
        <MediumSeparator />
-      <View style={{width:"95%",height:300,alignSelf:"center",backgroundColor:"#F2f2f2"}}>
-      <iframe src='https://www.youtube.com/embed/E7wJTI-1dvQ'
-        frameborder='0'
-        allow='autoplay; encrypted-media'
-        allowfullscreen
-        title='video'
-        style={{flex:1}}
-/>
-      </View>
+       <Pressable
+       onPress={(e) => {
+          window.open("https://mega.nz/folder/Cd9RlaxL#9Cbmuue3OH8GYtV7ioPAew")
+          e.preventDefault();
+        }}
+        onLongPress={(e) => {
+          window.open("https://mega.nz/folder/Cd9RlaxL#9Cbmuue3OH8GYtV7ioPAew")
+          e.preventDefault();
+        }}
+        style={{ alignSelf: "center", justifyContent: "center", alignItems: "center", paddingHorizontal: 28, paddingVertical: 12, backgroundColor: "#00a082", borderRadius: 100 }}>
+              <Text style={{fontFamily:"Montserrat", color: "#fff", fontWeight: "700", fontSize: 14 }}>
+                Ver los vídeos
+              </Text>
+            </Pressable>
+            
       <BigSeparator />
       <Pressable
       onPress={()=>this.closeModal()}

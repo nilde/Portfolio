@@ -24,6 +24,7 @@ import WhatEverScreen from './WhatEverScreen'
 import PrototypesModal from './PrototypesModal'
 import AboutMe from './AboutMe'
 import NextJob from './NextJob'
+import Buyness from './Buyness'
 import Habilities from './Habilities'
 import SearchResultsInitialScreen from './SearchResultsInitialScreen'
 
@@ -43,6 +44,7 @@ const screenRealtions = {
   aboutMe: "activeAboutMe",
   prototypes: "activePrototypes",
   nextJob: "activeNextJob",
+  buyness: "activeBuyness",
   howWasMade: "activeHowWasMade"
 }
 
@@ -56,6 +58,7 @@ export default class App extends Component {
       activeAboutMe: false,
       activePrototypes: false,
       activeNextJob: false,
+      activeBuyness:false,
       activeHowWasMade: false,
 
       //used to manage redirections
@@ -158,14 +161,14 @@ updateQuery(query){
           </View>
           <View style={{ width: "100%", backgroundColor: "rgb(227,246,241)" }}>
             <Text style={{ fontFamily: "Montserrat", fontSize: 32, fontWeight: "700" }}>
-              ¿Por qué quiero trabajar en Glovo?
+              ¿Qué estoy buscando actualmente?
             </Text>
             <MediumSeparator />
-            <WorkWithUsContainer type="LEFT" title="Quiero aprender" subtitle="Quiero mejorar mis habilidades y creo que el perfil joven y dinámico de Glovo encaja con mi personalidad." />
+            <WorkWithUsContainer type="LEFT" title="Quiero aprender" subtitle="Quiero mejorar mis habilidades y formar parte de una empresa que me ayude a conseguirlo." />
             <BigSeparator />
-            <WorkWithUsContainer type="CENTER" title="Tener un impacto global" subtitle="Tener la posibilidad de desarrollar software que mejora la vida de millones de personas es todo un sueño." />
+            <WorkWithUsContainer type="CENTER" title="Sentirme realizado" subtitle="Quiero un trabaje que me motive a despertarme cada día y sentir que aquello que estoy haciendo está ayudando a mejorar la vida de la gente." />
             <BigSeparator />
-            <WorkWithUsContainer type="RIGHT" title="Sector dinámico y competitivo" subtitle="Me gustan los retos y creo que el Q-Commerce es el sector más dinámico y competitivo actualmente." />
+            <WorkWithUsContainer type="RIGHT" title="Sector dinámico y competitivo" subtitle="Me gustan los retos y quiero sentir la presión y la sensación velocidad de aquellos productos que cambian la vida de la gente." />
 
 
             <BigSeparator />
@@ -179,30 +182,7 @@ updateQuery(query){
         </View>
         <TopBar query={this.state.query} updateQuery={this.updateQuery} lateralMenuRef={this.lateralMenuRef} />
         {/**Start modal */}
-        {false &&
-          <View style={{ width: "100%", height: "100%", position: "absolute", top: 0, backgroundColor: "#ffc244" }}>
-            <View style={{ alignItems: "center", width: "100%", height: "100%", backgroundColor: "#fff" }}>
-              <BigSeparator />
-              <Text style={{ fontFamily: "Montserrat", fontWeight: "700", fontSize: 16 }}>
-                Contacta conmigo
-              </Text>
-              <LittleSeparator />
-              <Text style={{ fontFamily: "Montserrat", fontWeight: "300", fontSize: 12, color: "#000" }}>
-                Estoy deseando poder trabajar en
-                <Text style={{ fontFamily: "Montserrat", fontWeight: "500", fontSize: 12, color: "#00a082" }}>
-                  {" "}Glovo
-                </Text>
-              </Text>
-              <MediumSeparator />
-              <Pressable style={{ alignSelf: "center", justifyContent: "center", alignItems: "center", paddingHorizontal: 28, paddingVertical: 12, backgroundColor: "#00a082", borderRadius: 100 }}>
-                <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "700", fontSize: 14 }}>
-                  De acuerdo
-                </Text>
-              </Pressable>
-            </View>
-
-          </View>
-        }
+       
 
 
         {/**Modal contact details */}
@@ -221,6 +201,10 @@ updateQuery(query){
           <NextJob toggleActiveScreen={this.toggleActiveScreen}/>
         }
 
+ {//CHECK
+  this.state.activeBuyness &&
+          <Buyness toggleActiveScreen={this.toggleActiveScreen}/>
+        }
 
         {//CHECK
           this.state.activeAboutMe &&

@@ -13,7 +13,7 @@ function App() {
   const [redirectToAppDetails,setRedirectToAppDetails]=useState(false)
 
   return (
-    <View style={{ position: "fixed", width: "100%", height: "100%", backgroundColor: "#fff" }}>
+    <View style={{ position: "fixed", width: "100%", height: window.innerHeight, backgroundColor: "#fff",overflowY:"scroll" }}>
       <BigSeparator />
       <Text style={{ fontWeight: "700", textAlign: "center", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 22 }}>
         Esta app es un poco antigua
@@ -74,11 +74,12 @@ function App() {
           Entendido
         </Text>
       </Pressable>
+      <BigSeparator />
 
 
       {
         redirectToAppDetails &&
-        <Redirect push push to={"/app/" + 12} />
+        <Redirect  push to={"/app/" + 12} />
       }
     </View>
 

@@ -212,7 +212,7 @@ componentDidMount(){
 
 
     return (
-      <Text style={{ textAlign: "left", fontFamily: "Montserrat", alignSelf: "flex-start", fontWeight: "400", fontSize: 16 }}>
+      <Text style={{paddingHorizontal:20, textAlign: "left", fontFamily: "Montserrat", alignSelf: "flex-start", fontWeight: "400", fontSize: 16 }}>
         {!!textToIterate &&
           textToIterate.map((item, index) => (
             <TextUnderlayedSearch
@@ -500,8 +500,8 @@ componentDidMount(){
                   <View style={{ alignSelf: "center", width: "90%", backgroundColor: "rgba(42,187,153,0.1)", borderRadius: 10 }}>
 
                     <View style={{ alignItems: "center", flexDirection: "row", justifyContent: "flex-start", height: 90 }}>
-                      <View style={{  justifyContent: "center", alignItems: "center", width: "15%", height: 70 }}>
-                        <View style={{overflow: "hidden", width: 60, height: 60, borderRadius: 10 }}>
+                      <View style={{  justifyContent: "center", alignItems: "center", width: "15%", height: (window.innerWidth*0.9)*0.15 }}>
+                        <View style={{overflow: "hidden", width: "70%", height: "70%", borderRadius: 10 }}>
                           <Image
                             source={imageRealtions[item.title]}
                             style={{ width: "100%", height: "100%", resizeMode: "cover",borderRadius:10 }}

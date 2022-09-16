@@ -5,10 +5,8 @@ function App() {
   return (
     <View style={styles.titleContainer}>
       <Text style={styles.titleLight}>
-        Explora{" "}
-        <Text style={styles.titleBold}>
-          mi currículum
-        </Text>
+        Explora mi currículum
+   
       </Text>
     </View>
 
@@ -26,12 +24,13 @@ var styles = StyleSheet.create({
     alignSelf: "center"
   },
   titleLight: {
-    fontWeight: "400",
-    fontSize:24
+    fontWeight: "bold",
+    fontSize:40,
+    fontFamily:"Montserrat"
     },
   titleBold: {
     fontWeight: "600",
-    fontSize: 24
+    fontSize: 32
 
   }
 })

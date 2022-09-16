@@ -15,12 +15,12 @@ const CIRCULAR=1000
 const BUBBLE_SIZE=114
 
 const relations={
-  "Habilidades":Skills,
+  "UX":Skills,
   "Estudios":Knowledges,
   "Cómo se hizo?":Made,
   "Lo que sea":Magic,
-  "Más":More,
-  "Próximo trabajo":NextJob,
+  "Buyness":More,
+  "Estoy buscando":NextJob,
   "Apps":Apps,
   "Comparte":Share,
 }
@@ -64,6 +64,8 @@ export default class Bubble extends Component {
   }
 
   componentDidMount(){
+
+    //window.open("localhost:3000", "_blank", `width=${200}, height=${100}`).resizeTo(300, 300);;
     setTimeout(()=>
     this.setState({
       visible:true
