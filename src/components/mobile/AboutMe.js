@@ -167,6 +167,7 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
         - Code Push{"\n"}
         - Admob{"\n"}
         - Google Analytics{"\n"}
+        - Netlify{"\n"}
         {"\n"}
         Conocimientos medios:{"\n"}
 
