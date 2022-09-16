@@ -335,7 +335,7 @@ export default class App extends Component {
   renderListHeader() {
 
     return (
-      <View style={{ overflow: "visible", width: "100%", height: 270, }}>
+      <View style={{ overflow: "visible", width: "100%", height: 230, }}>
 
         <View style={{ width: "100%", height: 200, backgroundColor: "#EDEDED" }}>
           {/**change that for accurate image */}
@@ -409,8 +409,7 @@ export default class App extends Component {
           </View>
 
         </View>
-
-
+{false &&
         <View style={{ flexDirection: "row", position: "absolute", bottom: 0, background: "#F2f2f2", borderRadius: 100, position: "absolute", width: "95%", alignSelf: "center", height: 30 }}>
           <View style={{ width: "10%", justifyContent: "center", alignItems: "center", height: "100%" }}>
             <Image style={{ width: 15, height: 15, resizeMode: "contain" }}
@@ -426,6 +425,7 @@ export default class App extends Component {
             placeholderTextColor={"gray"}
           />
         </View>
+}
       </View>
     )
 
@@ -659,12 +659,14 @@ export default class App extends Component {
             </View>
 
             <Pressable
-              onPress={() => this.setState({ activeReturnToHome: true })}
-              onLongPress={() => this.setState({ activeReturnToHome: true })}
+             // onPress={() => this.setState({ activeReturnToHome: true })}
+             // onLongPress={() => this.setState({ activeReturnToHome: true })}
               style={{ marginTop: 5, justifyContent: "center", alignItems: "center", width: 50, height: 50, }}>
+              {false &&
               <Image style={{ width: 20, height: 20, resizeMode: "contain",tintColor:"#00a082" }}
                 source={IconSearch}
               />
+              }
             </Pressable>
 
           </View>
@@ -701,8 +703,14 @@ export default class App extends Component {
 
 
             <Pressable
-              onPress={() => this.setState({ activeDetails: false })}
-              onLongPress={() => this.setState({ activeDetails: false })}
+            onPress={(e) => {
+                window.location.href = "mailto:nildomene@gmail.com";
+                e.preventDefault();
+              }}
+              onLongPress={(e) => {
+                window.location.href = "mailto:nildomene@gmail.com";
+                e.preventDefault();
+              }}
               style={{ alignSelf: "center", position: "absolute", bottom: 50, justifyContent: "center", alignItems: "center", paddingHorizontal: 28, paddingVertical: 12, backgroundColor: "#00a082", borderRadius: 100 }}>
               <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "700", fontSize: 14 }}>
                 Tengo una duda

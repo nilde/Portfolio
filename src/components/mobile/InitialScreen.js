@@ -175,7 +175,7 @@ updateQuery(query){
             <BigSeparator />
             <BigSeparator />
 
-            <Footer />
+            <Footer toggleActiveScreen={this.toggleActiveScreen}/>
 
           </View>
 

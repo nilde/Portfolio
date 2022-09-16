@@ -28,19 +28,19 @@ function App(props) {
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        En la escuela teníamos una asignatura dedicada a la informática y mientras a los demás se les dejaba jugar con el ordenador o usar programas muy sencillos, a mi me dejaban rienda suelta para progrmar mis pequeñas webs cargadas de wigdets y llenas de colores estridentes en html/css puro. Aunque era muy poco, yo me sentía increíblemente feliz ya que era primera vez que podia decir que había cpnstruido algo con mis propias manos.
+        En la escuela teníamos una asignatura dedicada a la informática y mientras a los demás se les dejaba jugar con el ordenador o usar programas muy sencillos, a mi me dejaban rienda suelta para progrmar mis pequeñas webs cargadas de wigdets y llenas de colores estridentes en html/css puro. Aunque era muy poco, yo me sentía increíblemente feliz ya que era primera vez que podia decir que había construido algo con mis propias manos.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        Después paso algo muy curioso. Todo aquello que me había apasionado durante mi etapa previa a la adolescencia dejó de interesarme y poco a poco fuí distanciandome de cualquier cosa relacionada con la programación. Acabé por olvidar todo lo que había aprendido, pero siempre recordaré con nostalgia mis pequeñas creaciones que sin duda me han guiado hasta aquí.
+        Después pasó algo muy curioso. Todo aquello que me había apasionado durante mi etapa previa a la adolescencia dejó de interesarme y poco a poco fuí distanciándome de cualquier cosa relacionada con la programación. Acabé por olvidar todo lo que había aprendido, pero siempre recordaré con nostalgia mis pequeñas creaciones que sin duda me han guiado hasta aquí.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        Así llegue al bachillerato, dónde cada vez veía más claro que me debía orientar hacía las letras. Por aquella época deboraba todos los libros que podía aunque detestaba los clásicos y sentía devoción por aquellos que eran políticamente incorrectos. Pero en lo más profundo de mí seguía sin olvidar la programación y las sensaciones que había sentido delante de una pantalla años atrás.
+        Así llegué al bachillerato, donde cada vez veía más claro que me debía orientar hacia las letras. Por aquella época deboraba todos los libros que podía aunque detestaba los clásicos y sentía devoción por aquellos que eran políticamente incorrectos. Pero en lo más profundo de mí seguía sin olvidar la programación y las sensaciones que había sentido delante de una pantalla años atrás.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        Así que en un giro inesperado, decidi cambiar de rumbo. Dejé la filosofía a un lado y centrandome de nuevo en la tecnología. La verdad es que esta decisión me tuvo mucho tiempo preguntandome si habia escogido lo correcto.
+        Así que en un giro inesperado, decidí cambiar de rumbo. Dejé la filosofía a un lado y centrándome de nuevo en la tecnología. La verdad es que esta decisión me tuvo mucho tiempo preguntandome si habia escogido lo correcto.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
@@ -60,23 +60,23 @@ function App(props) {
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        Terminé mis estudios en Ingeniería Informática a los 21, habiendo realizado la mención de computación y gran parte de la mención en software. Aquí desarrollé la primera aplicación importante con React Native para un proyecto de clase. Insistí para que el grupo que en tenia que dirigir usara esta tecnología y en cuanto se pusieron a experimentar por ellos mismos quedarón todos gratamente sorprendidos. Realizamos tan buen trabajo que obtuvimos matrícula de honor. El resultado de este proyecto fue primera versión de una app en la que trabajaría cerca de un año (Urbis). Por mi cuenta, además ya había publicado cerca de 10 aplicaciones en las que cada una de ellas me ayudaba a darme cuenta de las posibilidades (y las limitaciones) de esta tecnología.
+        Terminé mis estudios en Ingeniería Informática a los 21, habiendo realizado la mención de computación y gran parte de la mención en software. Aquí desarrollé la primera aplicación importante con React Native para un proyecto de clase. Insistí para que el grupo que tenia que dirigir usara esta tecnología y en cuanto se pusieron a experimentar por ellos mismos quedaron todos gratamente sorprendidos. Realizamos tan buen trabajo que obtuvimos matrícula de honor. El resultado de este proyecto fue la primera versión de una app en la que trabajaría cerca de un año (Urbis). Por mi cuenta, además, ya había publicado cerca de 10 aplicaciones; cada una de ellas me ayudaba a darme cuenta de las posibilidades (y las limitaciones) de esta tecnología.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        Urbis era una aplicación que iba a permitir conectar a la gente con sus municipios de una forma revolucionaria. Permítia mantenerse al día de todo lo que sucedía y a la vez, los propios ciudadanos podían reportar incidencias en menos de 10 segundos. Intenté lanzar la aplicación con la colaboración de algunos ayuntamientos, pero lamentablemente no supe darle el enfoque correcto. Cúando parecía que iba a empezar a arrancar, llegó la pandemía y decidí que no era el mejor momento para lanzarla.
+        Urbis era una aplicación que iba a permitir conectar a la gente con sus municipios de una forma revolucionaria. Permítia mantenerse al día de todo lo que sucedía y a la vez, los propios ciudadanos podían reportar incidencias en menos de 10 segundos. Intenté lanzar la aplicación con la colaboración de algunos ayuntamientos, pero lamentablemente no supe darle el enfoque correcto. Cuando parecía que iba a empezar a arrancar, llegó la pandemia y decidí que no era el mejor momento para lanzarla.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        En este punto y después de dos años formandome y realizando pequeños proyectos por mi cuenta, decidí que era hora de estudiar un máster que me ayudara a entender mejor al usuario que al final era quién debía usar mi aplicación. Me decidí a realizarlo por la UOC debido a la gran flexibilidad que me daba y que creí que era el máster que mejor se podía ajustar a mis necesidades.
+        En este punto y después de dos años formándome y realizando pequeños proyectos por mi cuenta, decidí que era hora de estudiar un máster que me ayudara a entender mejor al usuario, precisamente el usuario quien debía usar mi aplicación. Me decidí a realizar el máster universitario de Diseño de Interacción y Experiencia de Usuario en la UOC porque creía que era el que mejor se podía ajustar a mis necesidades y además me convenció la gran flexibilidad que ofrece la UOC.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        Al mismo tiempo decidí intentar lanzar una app relacionada con la comida. Si bien existen alternativas para poder pedir cosas a domicilios, un socio y yo decidimos optar por justo lo contrario. Intentar conectar todos los negocios locales sin entrega. Nuestra idea principal era que el usuario realizara un pedido en una carnicería por ejemplo, pagará con el móvil y solo pasará a buscar el pedido. Creíamos realmente en este enfoque y trabajamos duramente durante más de 8 meses. Actualmente disponemos de un MVP y algunos clientes potenciales.
+        Al mismo tiempo decidí intentar lanzar una app relacionada con la comida. Si bien existen alternativas para poder pedir cosas a domicilios, un socio y yo decidimos optar por justo lo contrario. Intentar conectar todos los negocios locales sin entrega. Nuestra idea principal era que el usuario realizara un pedido en una carnicería por ejemplo, pagara con el móvil y solo pasara a buscar el pedido. Creíamos realmente en este enfoque y trabajamos duramente durante más de 8 meses. Actualmente disponemos de un MVP y algunos clientes potenciales.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-      Lamentablemente no podemos dedicarle el tiempo que necesita así que de momento hemos decidio centrarnos cada uno en nuestras respectivas carreras profesionales y tratar Buyness como un proyecto secundario.
+      Lamentablemente no podemos dedicarle el tiempo que necesita así que de momento hemos decidió centrarnos cada uno en nuestras respectivas carreras profesionales y tratar Buyness como un proyecto secundario.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
@@ -162,7 +162,6 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
         - HTML{"\n"}
         - Firebase{"\n"}
         - Google Cloud{"\n"}
-        - Sass{"\n"}
         - XCode{"\n"}
         - Code Push{"\n"}
         - Admob{"\n"}
@@ -180,6 +179,7 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
         - C{"\n"}
         - C++{"\n"}
         - Python{"\n"}
+        - Android Studio{"\n"}
         {"\n"}
 
         Algunos conocimientos:{"\n"}

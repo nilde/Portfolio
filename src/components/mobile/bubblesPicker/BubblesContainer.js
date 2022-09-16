@@ -21,7 +21,7 @@ function App(props) {
 
       <Bubble position={"RIGHT"} title={"Prototipos"} {...props} />
       <Bubble position={"BOTTOM_LEFT"} title={"Estoy buscando"} {...props} />
-      <Bubble position={"BOTTOM_RIGHT"} title={"Cómo se hizo?"} {...props} />
+      <Bubble position={"BOTTOM_RIGHT"} title={"¿Cómo se ha hecho?"} {...props} />
       <BubbleBig title={"Lo que sea"} {...props} />
 
 

@@ -13,7 +13,7 @@ const BUBBLE_SIZE=120
 const relations={
   "UX":Skills,
   "Estudios":Knowledges,
-  "Cómo se hizo?":Made,
+  "¿Cómo se ha hecho?":Made,
   "Lo que sea":Magic
 }
 

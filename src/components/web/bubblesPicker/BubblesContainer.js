@@ -27,7 +27,7 @@ return(
 <View style={{flexWrap:"wrap",alignItems:"center", alignSelf:"center",flexDirection:"row",height:BUBBLE_SIZE,justifyContent:"space-between"}}>
 <Bubble index={0}  title={"UX"}/>
 <Bubble index={1}  title={"Estudios"}/>
-<Bubble index={2}  title={"Cómo se hizo?"}/>
+<Bubble index={2}  title={"¿Cómo se ha hecho?"}/>
 <Bubble index={3}  title={"Lo que sea"}/>
 
 </View>

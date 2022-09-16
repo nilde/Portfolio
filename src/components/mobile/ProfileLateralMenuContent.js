@@ -76,8 +76,8 @@ export default function App(props) {
       </Text>
       <View style={{ height: 10 }} />
       <Text
-      onPress={()=>window.location.href="https://www.buynessapp.com"}
-      onLongPress={()=>window.location.href="https://www.buynessapp.com"} 
+      onPress={()=>window.open("https://www.buynessapp.com","_blank")}
+      onLongPress={()=>window.open("https://www.buynessapp.com","_blank")} 
        style={{ textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
       https://www.buynessapp.com
       </Text>
@@ -89,8 +89,8 @@ export default function App(props) {
       </Text>
       <View style={{ height: 10 }} />
       <Text
-      onPress={()=>window.location.href="https://www.github.com/nilde"}
-      onLongPress={()=>window.location.href="https://www.github.com/nilde"} 
+      onPress={()=>window.open("https://www.github.com/nilde","_blank")}
+      onLongPress={()=>window.open("https://www.github.com/nilde","_blank")} 
        style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
       https://www.github.com/nilde
       </Text>

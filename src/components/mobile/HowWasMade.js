@@ -59,7 +59,7 @@ render(){
       <BigSeparator />
 
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 24,  fontWeight: "700" }}>
-        ¿Cómo se hizo?
+        ¿Cómo se ha hecho?
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14,  fontWeight: "400",color:"gray" }}>

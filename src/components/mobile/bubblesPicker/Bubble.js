@@ -17,7 +17,7 @@ const BUBBLE_SIZE = 90
 const relations = {
   "UX": Skills,
   "Sobre mí": AboutMe,
-  "Cómo se hizo?": Made,
+  "¿Cómo se ha hecho?": Made,
   "Lo que sea": Magic,
   "Buyness": More,
   "Estoy buscando": NextJob,
@@ -30,7 +30,7 @@ const relations = {
 const relationsScreen = {
   "UX": "habilities",
   "Sobre mí": "aboutMe",
-  "Cómo se hizo?": "howWasMade",
+  "¿Cómo se ha hecho?": "howWasMade",
   "Buyness": "buyness",
   "Estoy buscando": "nextJob",
   "Prototipos": "prototypes",
