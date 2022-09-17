@@ -68,11 +68,11 @@ render(){
 
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14,  fontWeight: "400",color:"gray" }}>
-        En este vídeo se puede observar todo el proceso que se ha llevado a cabo para desarrollar esta web. Se ha usado React Native Web para poder mostrar el dominio de los conceptos del desarrollo de interfaces basados en el concepto de componentes y además el conocimiento en la generación de interfaces para dispositivos móviles.
+        En el siguiente enlace, se puede observar todo el proceso que se ha llevado a cabo para desarrollar esta web. Se ha usado React Native Web para mostrar el dominio de los conceptos del desarrollo de interfaces basadas en componentes.
       </Text>
       <MediumSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14,  fontWeight: "400",color:"gray" }}>
-      Se han usado algunos de los recursos de la web original para intentar mantener un aspecto similar, y además se han diseñado todas las animaciones de la web usando la API de Animated de React Native.
+      Se han usado algunos de los recursos de la web original de Glovo para intentar mantener un aspecto similar. Además se han diseñado todas las animaciones de la web usando la API de Animated de React Native para darle un acabado profesional.
        </Text>
        <MediumSeparator />
        <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14,  fontWeight: "400",color:"gray" }}>

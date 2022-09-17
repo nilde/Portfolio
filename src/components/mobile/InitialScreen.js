@@ -14,7 +14,7 @@ import whiteLogo from '../../images/whiteLogo.png'
 import WorkWithUsContainer from './WorkWithUsContainer'
 import Highlights from '../../images/highlights.svg'
 import Card from './Card'
-import Footer from './Footer'
+import FooterLarge from './FooterLarge'
 import TextUnderlayed from './TextUnderlayed'
 
 
@@ -175,7 +175,7 @@ updateQuery(query){
             <BigSeparator />
             <BigSeparator />
 
-            <Footer toggleActiveScreen={this.toggleActiveScreen}/>
+            <FooterLarge toggleActiveScreen={this.toggleActiveScreen}/>
 
           </View>
 

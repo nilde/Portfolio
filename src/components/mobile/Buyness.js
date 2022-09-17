@@ -82,14 +82,14 @@ class App extends Component {
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "gray" }}>
-                Aplicación web/app destinada a conectar a los negocios locales con los clientes de una manera nunca antes vista. El código de toda la plataforma fue desarrollado íntegramente por mí.
+                Aplicación web/app destinada a conectar a los negocios locales con los clientes de una manera nunca antes vista. La plataforma ha sido íntegramente diseñada y codificada por mí.
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
                 APP:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Se ha realizado la programación de las aplicaciones para iOS y Android mediante el uso de React Native para el desarrollo de ambas. Se decidió usar esta tecnología ya que reducía significativamente los tiempos y la complejidad de desarrollo. Además permitía reaprovechar ciertos fragmentos del código para la página web. La web permitía al usuario consultar los negocios digitales que se encontraban disponibles en la plataforma para realizar pedidos online y pasarlos a recoger.
+                Se ha realizado la programación de las aplicaciones para iOS y Android mediante el uso de React Native para el desarrollo simultáneo de ambas. Se decidió a usar esta tecnología ya que reducía significativamente los tiempos y la complejidad de desarrollo del MVP. Además permitía aprovechar fragmentos del código para la página web. La app permite al usuario consultar los negocios digitales que se encuentran disponibles en la plataforma, realizar pedidos online y pasar a recoger sus pedidos en las tiendas físicas.
               </Text>
 
               <LittleSeparator />
@@ -97,27 +97,27 @@ class App extends Component {
                 WEB:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                La landing page se realizó con React (concretamente con React Native Web) y estava destinada a mostrar de forma breve en que consistía el producto.
+                La landing page se realizó con React (concretamente con React Native Web) y está destinada a mostrar de forma breve en que consiste el producto.
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
                 WEB DE GESTIÓN:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                La página web de gestión en tiempo real también se realizó usando React Native Web y permitia a los establecimientos modificar la información acerca de su establecimiento/catálogo de productos.
+                La página web de gestión en tiempo real también se realizó usando React Native Web y permite a los establecimientos modificar la información acerca de su catálogo de productos.
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
                 FUNCIONES EN CLOUD:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Se han usado algunas funciones en Cloud para poder expandir las características de las apps, como el envio de notificaciones a los usuarios. También se estaba haciendo la transición hacia la construcción de una API basada en dichas funciones como alternativa a la solución actual. </Text>
+                Se han usado algunas funciones en Cloud para poder extender las características de las apps. Una funcionalidad clave ha sido el envio de notificaciones a los usuarios. También se está realizando la transición hacia la construcción de una API basada funciones lambda como alternativa a la solución actual. </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
                 BASE DE DATOS:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Se ha utilizado Firebase para realizar el MVP ya que su capa gratuita aportaba la tranquilidad de poder desarrollar el producto y realizar pruebas sin la necesidad de invertir dinero.
+                Se ha utilizado Firebase para realizar el MVP ya que su capa gratuita aportaba la tranquilidad de poder desarrollar el producto y realizar las pruebas oportunas sin la necesidad de invertir grandes cantidades de dinero.
               </Text>
 
               <LittleSeparator />
@@ -125,21 +125,21 @@ class App extends Component {
                 REGISTRO DEL DOMINIO:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Se ha realizado el registro del dominio y la posterior configuración de los DNS para poder acceder a la página alojada en Heroku a través del dominio escogido.
+                Se ha realizado el registro del dominio y la posterior configuración de los DNS para poder acceder a la página alojada en Netlify a través de sus propios DNS.
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
                 CREACIÓN DE UNA DIRECCIÓN DE CORREO PERONALIZADA, OTRAS CONFIGURACIONES ADICIONALES DEL DNS:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Se han realizado configuraciones adicionales para contar con un correo personalizado y configuración de otros elementos como la inclusión de Analytics para fases posteriores.
+                Se han realizado configuraciones adicionales para contar con un correo electrónico personalizado y también, se han configurado otros elementos como Google Analytics para fases posteriores del desarrollo.
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
                 CI/CD:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Se usó Heroku para la publicación de la landing page y de la plataforma de gestión de los establecimeintos. Con la integración automática con GitHub podia publicar código automáticamente cada vez que realizaba cambios sobre la versión de la rama master.
+                Se usó Netlify para la publicación de la landing page y de la plataforma de gestión de los establecimientos. Con la integración automática de GitHub se puede publicar código automáticamente cada vez que se realizan cambios sobre la versión de la rama "master".
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
@@ -153,7 +153,7 @@ class App extends Component {
                 ESTADO ACTUAL:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Actualmente nos encontramos en proceso de encontrar nuestros primeros cliente, aunque contamos con un restaurante que usa nuestro servicio de carta mediante QR desde hace cerca de 8 meses.
+                Actualmente nos encontramos en proceso de encontrar nuestros primeros clientes, aunque contamos con un restaurante que usa nuestro servicio de carta mediante QR desde hace más de 5 meses.
               </Text>
               <LittleSeparator />
 
@@ -161,7 +161,7 @@ class App extends Component {
                 IMÁGENES:
               </Text>
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                A continuación se pueden observar algunas imágenes del aspecto final que presenta el proyecto actualmente.
+                A continuación se pueden observar algunas imágenes del aspecto final que presenta el proyecto:
               </Text>
               <LittleSeparator />
               <View style={{ flexDirection: "row", justifyContent: "space-evenly", width: "100%" }}>
@@ -268,7 +268,7 @@ class App extends Component {
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                Si tienes cualquier adicional sobre el proyecto, no dudes en escribirme a mi correo electrónico (nildomene@gmail.com) o también puedes pulsar en el botón de más abajo.
+                Si tienes cualquier duda adicional sobre el proyecto, no dudes en escribirme a mi correo electrónico (nildomene@gmail.com) o también puedes pulsar en el botón situado debajo.
               </Text>
               <MediumSeparator />
               <Pressable

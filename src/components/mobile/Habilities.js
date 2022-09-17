@@ -71,7 +71,7 @@ class App extends Component {
             </Text>
             <MediumSeparator />
             <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "gray" }}>
-              Durante más de 2 años he estado intentando mejorar mis habilidades. He aprendido distintos lenguajes de programación y explorado en profundidad como funcionan algunas de las tecnologías. Pulsa en alguna de las imágenes para ver los prototipos realizados con Figma.
+              A continuación pueden verse algunos de los prototipos que he realizado durante el máster. Pulsa en alguna de las imágenes para ver los prototipos en la propia página de Figma.
             </Text>
 
             <MediumSeparator />

@@ -63,7 +63,7 @@ class App extends Component {
             <View style={{ width: "95%", backgroundColor: "#fff", alignSelf: "center" }}>
               <MediumSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 24, fontWeight: "700" }}>
-               Actualmente estoy en busca de empleo
+               Actualmente estoy buscando empleo
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "700", color: "#000" }}>
@@ -80,8 +80,8 @@ class App extends Component {
               </Text>
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
-                - Desarrollador front-end{"\n"}
-                - Desarrollador back-end{"\n"}
+                - Desarrollador Front-End{"\n"}
+                - Desarrollador Back-End{"\n"}
                 - Roles relacionados con el desarrollo de producto{"\n"}
                 - Roles relacionados con el UX{"\n"}
                 - Cualquier otra posición que resulte interesante :){"\n"}
@@ -94,10 +94,10 @@ class App extends Component {
               <LittleSeparator />
               <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "300", color: "#000" }}>
                - Me ayude a mejorar mis conocimientos.{"\n"}
-               - Que tenga una visión clara con objetivos bien definidos.{"\n"}
+               - Tenga una visión clara con objetivos bien definidos.{"\n"}
                - Cuente con un ambiente dinámico y competitivo.{"\n"}
                - Presente expectativas de progresión dentro de la empresa. {"\n"}
-               - Que cuente con equipos multidisciplinares que me ayuden a salir de mi zona de confort. {"\n"}
+               - Cuente con equipos multidisciplinares que me ayuden a salir de mi zona de confort. {"\n"}
 
               </Text>
               <MediumSeparator />

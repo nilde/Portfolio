@@ -33,7 +33,7 @@ export default class App extends Component {
           <>
             <MediumSeparator />
             <Text style={{ fontFamily: "Montserrat", fontWeight: "700", fontSize: 28, alignSelf: "flex-start", marginLeft: "2.5%",textAlign:"left"  }}>
-              Lo que sea
+              ¡Pregúntame lo que sea!
             </Text>
             <View style={{ width: "100%", height: 10 }} />
             <Text style={{ fontFamily: "Montserrat", fontWeight: "400", fontSize: 20, alignSelf: "flex-start", marginLeft: "2.5%",textAlign:"left" }}>
@@ -41,7 +41,7 @@ export default class App extends Component {
             </Text>
             <View style={{ width: "100%", height: 10 }} />
             <Text style={{ fontFamily: "Montserrat", fontWeight: "400", fontSize: 14, alignSelf: "flex-start", marginLeft: "2.5%",textAlign:"left",paddingRight:20  }}>
-              Cualquier duda que te pueda surgir al leer mi currículum, no dudes en escribirme a esta dirección de correo y estaré encantado de resolverla.
+              Si te surge cualquier duda al leer mi currículum, no dudes en escribirme a mi correo electrónico y estaré encantado de intentar resolverla.
             </Text>
 
             <Pressable

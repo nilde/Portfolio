@@ -114,7 +114,7 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
         - Urbis{"\n"}
         - Buyness{"\n"}
         - AR para sitios vacacionales{"\n"}
-        - Actualmente trbajando en un juego de puzzles basado en asociaciones de palabras.{"\n"}
+        - Actualmente trabajando en un juego de puzzles basado en asociaciones de conceptos.{"\n"}
 
       </Text>
       <MediumSeparator />
@@ -123,7 +123,7 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
       </Text>
       <LittleSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        A continuación puede consultarse las mejores posiciones de la mayoría de aplicaciones publicadas en la App Store.
+        A continuación puede consultarse las mejores posiciones de algunas de las aplicaciones publicadas en la App Store.
       </Text>
       <LittleSeparator />
       <Text
@@ -142,6 +142,7 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
         Nativo:{"\n"}
         - Catalán{"\n"}
         - Castellano{"\n"}
+        {"\n"}
         Medio-Alto:{"\n"}
         - Inglés{"\n"}
       </Text>
@@ -219,7 +220,7 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
       </Text>
       <LittleSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        A continuación puedes consultar mi TFG que realizé sobre un tema relacionado con la conducción autónoma, concretamente con la generación de secuencias de vídeo que incluían elementos virtuales con el objetivo de crear conjuntos de entrenamiento que contaran con situaciones excepcionales:
+        A continuación puedes consultar el TFG que realicé sobre un tema relacionado con la conducción autónoma, concretamente con la generación de secuencias de vídeo que incluían elementos virtuales con el objetivo de crear conjuntos de entrenamiento que contaran con situaciones excepcionales:
       </Text>
       <LittleSeparator />
       <Text
@@ -234,7 +235,7 @@ Si has llegado hasta aquí, muchas gracias por haber dedicado tu tiempo a leer t
       </Text>
       <LittleSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        A continuación puedes consultar mi TFM que realizé sobre el diseño de Buyness, desde las entrevistas con clientes hasta la realización de los distintos prototipos de baja y alta fidelidad.
+        A continuación puedes consultar el TFM que realicé sobre el diseño de Buyness, des de las entrevistas con clientes hasta la realización de los distintos prototipos de baja y alta fidelidad.
       </Text>
       <LittleSeparator />
       <Text

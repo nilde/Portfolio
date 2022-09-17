@@ -128,6 +128,7 @@ componentDidMount(){
   this.manageSearch(this.props.query)
 }
   searchInString(allText, query) {
+    try{
     var lowerCasedText = allText.toLowerCase()
     var lowerCasedQuery = query.toLowerCase()
 
@@ -205,6 +206,10 @@ componentDidMount(){
     }
 
     return textFragments
+  }
+  catch(e){
+    return []
+  }
   }
   generateTexts(text,fontSize,color) {
 
@@ -344,6 +349,7 @@ componentDidMount(){
   //Function used to search inside large strings and 
   //make highlights
   searchInString(allText, query) {
+    try{
     var lowerCasedText = allText.toLowerCase()
     var lowerCasedQuery = query.toLowerCase()
 
@@ -421,6 +427,10 @@ componentDidMount(){
     }
 
     return textFragments
+  }
+  catch(e){
+    return []
+  }
   }
 
 

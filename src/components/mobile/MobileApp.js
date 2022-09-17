@@ -25,7 +25,7 @@ function App() {
         </Route>
       </Switch>
       
-      {false &&
+      {true &&
         <CookiesMessage />
       }
     </div>
