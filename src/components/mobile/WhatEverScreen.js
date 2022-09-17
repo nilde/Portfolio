@@ -1,5 +1,5 @@
 import { View, StyleSheet, Text, Pressable, Image, Animated } from "react-native";
-import MediumSeparator from './MediumSeparator'
+import BigSeparator from './BigSeparator'
 import Close from '../../images/close.svg'
 import { Component } from "react";
 
@@ -31,16 +31,16 @@ export default class App extends Component {
         {
           this.state.activeFront &&
           <>
-            <MediumSeparator />
-            <Text style={{ fontFamily: "Montserrat", fontWeight: "700", fontSize: 28, alignSelf: "flex-start", marginLeft: "2.5%",textAlign:"left"  }}>
+            <BigSeparator />
+            <Text style={{ fontFamily: "Montserrat", fontWeight: "700", fontSize: 28, alignSelf: "flex-start", paddingHorizontal:20,textAlign:"left"  }}>
               ¡Pregúntame lo que sea!
             </Text>
             <View style={{ width: "100%", height: 10 }} />
-            <Text style={{ fontFamily: "Montserrat", fontWeight: "400", fontSize: 20, alignSelf: "flex-start", marginLeft: "2.5%",textAlign:"left" }}>
+            <Text style={{ fontFamily: "Montserrat", fontWeight: "400", fontSize: 20, alignSelf: "flex-start", paddingHorizontal:20,textAlign:"left" }}>
               nildomene@gmail.com
             </Text>
             <View style={{ width: "100%", height: 10 }} />
-            <Text style={{ fontFamily: "Montserrat", fontWeight: "400", fontSize: 14, alignSelf: "flex-start", marginLeft: "2.5%",textAlign:"left",paddingRight:20  }}>
+            <Text style={{ fontFamily: "Montserrat", fontWeight: "400", fontSize: 14, alignSelf: "flex-start", paddingHorizontal:20,textAlign:"left",paddingRight:20  }}>
               Si te surge cualquier duda al leer mi currículum, no dudes en escribirme a mi correo electrónico y estaré encantado de intentar resolverla.
             </Text>
 
