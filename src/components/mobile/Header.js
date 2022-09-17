@@ -1,5 +1,6 @@
 import { View, StyleSheet, Image, Text } from "react-native";
 import BigSeparator from './BigSeparator';
+import MediumSeparator from './MediumSeparator';
 import BigTitle from './BigTitle';
 import BubblesContainer from './bubblesPicker/BubblesContainer'
 
@@ -15,7 +16,7 @@ function App(props) {
     <BigSeparator />
       <BigSeparator />
       <BigTitle />
-      <BigSeparator />
+      <MediumSeparator />
       {/**Bubbles container contains all options to pick up */}
       <BubblesContainer {...props} />
       <BigSeparator />
