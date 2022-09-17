@@ -9,16 +9,19 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lateralOffset: new Animated.Value(-1200)
+      lateralOffset: new Animated.Value(100000),
+      widthScreen:window.innerWidth,
+      heightScreen:window.innerHeight
     }
     this.openModal=this.openModal.bind(this);
     this.closeModal=this.closeModal.bind(this);
+    this.handleResize=this.handleResize.bind(this);
   }
 
   openModal(){
     //change to interpolation
     Animated.timing(this.state.lateralOffset, {
-      toValue: window.innerWidth,
+      toValue: this.state.widthScreen,
       duration: 300
     }).start()
   }
@@ -31,8 +34,15 @@ export default class App extends Component {
     }).start()
   }
 
+  handleResize() {
+    this.setState({widthScreen:window.innerWidth,heightScreen:window.innerHeight},()=>this.openModal())
+
+       
+    }
+
   componentDidMount() {
    //this.openModal()
+   window.addEventListener('resize', this.handleResize)
   }
 
   render() {
@@ -46,7 +56,7 @@ export default class App extends Component {
               translateX: this.state.lateralOffset
             }]
           },
-          {zIndex:99,top:0, position: "fixed", left: "-100%", width: "100%", height: window.innerHeight, backgroundColor: "#fff" }]}>
+          {zIndex:99,top:0, position: "fixed", left: -this.state.widthScreen, width: "100%", height: this.state.heightScreen, backgroundColor: "#fff" }]}>
          <ProfileMenuContent closeModal={this.closeModal}/>
       </Animated.View>
 

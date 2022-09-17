@@ -21,8 +21,7 @@ export default function App(props) {
   return (
     <View
     style={{overflowY:"scroll", width:"100%",height:"100%",overflow:"hidden",backgroundColor:"#fff"}}
-      onStartShouldSetResponder={e => touchX = e.nativeEvent.locationX}
-      onClick={e => checkCloseMovement(e.nativeEvent.clientX)}>
+>
 
       <View style={{width:"100%"}}>
         <LittleSeparator />
@@ -93,6 +92,19 @@ export default function App(props) {
       onLongPress={()=>window.open("https://www.github.com/nilde","_blank")} 
        style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
       https://www.github.com/nilde
+      </Text>
+      <LittleSeparator />
+      <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
+      <LittleSeparator />
+      <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
+        Repositorio
+      </Text>
+      <View style={{ height: 10 }} />
+      <Text
+      onPress={()=>window.open("https://github.com/nilde/Portfolio","_blank")}
+      onLongPress={()=>window.open("https://github.com/nilde/Portfolio","_blank")} 
+       style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
+      https://github.com/nilde/Portfolio
       </Text>
       <LittleSeparator />
       <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />

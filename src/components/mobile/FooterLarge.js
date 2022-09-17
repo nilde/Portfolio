@@ -126,6 +126,15 @@ function Footer(props) {
         </Pressable>
         <LittleSeparator />
         <Pressable
+          onPress={() => window.open("https://github.com/nilde/Portfolio", "_blank")}
+          onLongPress={() => window.open("https://github.com/nilde/Portfolio", "_blank")}
+        >
+          <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "500", fontSize: 14, alignSelf: "flex-start", marginLeft: 30 }}>
+            Repositorio
+          </Text>
+        </Pressable>
+        <LittleSeparator />
+        <Pressable
           onPress={() => window.open("https://ddd.uab.cat/pub/tfg/2019/tfg_182220/TFG_1425988_FINAL.pdf")}
           onLongPress={() => window.open("https://ddd.uab.cat/pub/tfg/2019/tfg_182220/TFG_1425988_FINAL.pdf")}
         >
