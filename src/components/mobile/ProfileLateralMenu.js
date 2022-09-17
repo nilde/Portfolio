@@ -35,7 +35,7 @@ export default class App extends Component {
   }
 
   handleResize() {
-    this.setState({widthScreen:window.innerWidth,heightScreen:window.innerHeight},()=>this.openModal())
+    this.setState({widthScreen:window.innerWidth,heightScreen:window.innerHeight})
 
        
     }
