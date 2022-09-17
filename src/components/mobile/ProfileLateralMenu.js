@@ -9,7 +9,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lateralOffset: new Animated.Value(100000),
+      lateralOffset: new Animated.Value(-100000),
       widthScreen:window.innerWidth,
       heightScreen:window.innerHeight
     }
