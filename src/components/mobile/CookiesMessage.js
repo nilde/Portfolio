@@ -14,7 +14,7 @@ function App() {
             </Text>
             <View style={{width:"100%",height:10}}/>
             <Text style={{fontFamily:"Montserrat", fontWeight: "400", fontSize: 14, alignSelf: "flex-start",paddingHorizontal:20,textAlign:"left",color:"gray" }}>
-             Me encantaría tener la posibilidad de trabajar en una empresa puntera y competitiva, así que he decidido crear esta pequeña web y grabar el proceso para poder demostrar mis habilidades. Soy licenciado en Ingeniería informática, tengo un máster centrado en UX y he desarrollado más de 15 aplicaciones (y muchos otros prototipos) usando React y React Native.
+             Me encantaría tener la posibilidad de trabajar en una empresa puntera y competitiva, así que he decidido crear esta pequeña web y grabar el proceso para poder demostrar mis habilidades. Soy licenciado en Ingeniería Informática, tengo un máster centrado en UX y he desarrollado más de 15 aplicaciones (y muchos otros prototipos) usando React y React Native.
             </Text>
 <MediumSeparator/>
             <Pressable
