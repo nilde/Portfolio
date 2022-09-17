@@ -3,23 +3,30 @@ import BigSeparator from './BigSeparator'
 import MediumSeparator from './MediumSeparator'
 import LittleSeparator from './LittleSeparator'
 import Close from '../../images/close.svg'
+import Profile from '../../images/profile.png'
 
 function App(props) {
   window.scrollTo(0, 0)
   return (
     <View style={{ position: "fixed", top: 0, width: "100%", height: "100%", backgroundColor: "#fff", overflowY: "scroll" }}>
       <MediumSeparator />
+      <View
 
-      <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 24, fontWeight: "700" }}>
-        Sobre mí
-      </Text>
-      <MediumSeparator />
+style={{marginLeft:20, alignSelf:"flex-start", justifyContent: "center", alignItems: "center"}}>
+<Image
+  source={Profile}
+  style={{ width: 130, height: 130, resizeMode: "contain" }}
+/>
+</View>
+<MediumSeparator />
+
+     
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 16, fontWeight: "700" }}>
         MI PEQUEÑA HISTORIA
       </Text>
       <LittleSeparator />
       <Text style={{ textAlign: "left", width: "90%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, fontWeight: "400", color: "#000" }}>
-        Mi nombre es Nil Domene Esteban tengo 24 años y actualmente me dedico al desarrollo frontend y a aplicaciones híbridas con React y React Native.
+        Mi nombre es Nil Domene Esteban, tengo 24 años y actualmente me dedico al desarrollo frontend y a aplicaciones híbridas con React y React Native.
       </Text>
 
       <MediumSeparator />
