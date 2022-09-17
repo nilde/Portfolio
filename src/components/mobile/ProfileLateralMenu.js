@@ -56,7 +56,7 @@ export default class App extends Component {
               translateX: this.state.lateralOffset
             }]
           },
-          {zIndex:99,top:0, position: "fixed", left: -this.state.widthScreen, width: "100%", height: this.state.heightScreen, backgroundColor: "#fff" }]}>
+          {zIndex:99,top:0, position: "fixed", left: -this.state.widthScreen, width:this.state.widthScreen, height: this.state.heightScreen, backgroundColor: "#fff" }]}>
          <ProfileMenuContent closeModal={this.closeModal}/>
       </Animated.View>
 
