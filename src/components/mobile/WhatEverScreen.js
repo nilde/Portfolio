@@ -45,8 +45,8 @@ export default class App extends Component {
             </Text>
 
             <Pressable
-              onPress={() => this.setState({ activeDetails: false })}
-              onLongPress={() => this.setState({ activeDetails: false })}
+              onPress={() => this.props.toggleActiveScreen("whatEver")}
+              onLongPress={() => this.props.toggleActiveScreen("whatEver")}
               style={{position:"absolute",bottom:50, alignSelf: "center", justifyContent: "center", alignItems: "center", paddingHorizontal: 50, paddingVertical: 15, backgroundColor: "#00a082", borderRadius: 100 }}>
               <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "700", fontSize: 16 }}>
                Volver al inicio
