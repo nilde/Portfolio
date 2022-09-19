@@ -117,6 +117,15 @@ function Footer(props) {
 
         <LittleSeparator />
         <Pressable
+          onPress={() => window.open("https://linkedin.com/in/nil-domene-esteban-29599a106", "_blank")}
+          onLongPress={() => window.open("https://linkedin.com/in/nil-domene-esteban-29599a106", "_blank")}
+        >
+          <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "500", fontSize: 14, alignSelf: "flex-start", marginLeft: 30 }}>
+            LinkedIn
+          </Text>
+        </Pressable>
+        <LittleSeparator />
+        <Pressable
           onPress={() => window.open("https://www.github.com/nilde", "_blank")}
           onLongPress={() => window.open("https://www.github.com/nilde", "_blank")}
         >

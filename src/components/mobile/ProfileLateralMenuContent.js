@@ -58,17 +58,16 @@ export default function App(props) {
         nildomene@gmail.com
       </Text>
       <LittleSeparator />
-      <View style={{ height: 2, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
-      <LittleSeparator />
+ 
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
         Teléfono
       </Text>
       <View style={{ height: 10 }} />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
-        +34 627761879
+        +34 627 76 18 79
       </Text>
       <LittleSeparator />
-      <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
+      <View style={{ height: 2, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
       <LittleSeparator />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
         Trabajando en Buyness como side-project
@@ -84,6 +83,19 @@ export default function App(props) {
       <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
       <LittleSeparator />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
+        LinkedIn
+      </Text>
+      <View style={{ height: 10 }} />
+      <Text
+      onPress={()=>window.open("https://linkedin.com/in/nil-domene-esteban-29599a106","_blank")}
+      onLongPress={()=>window.open("https://linkedin.com/in/nil-domene-esteban-29599a106","_blank")} 
+       style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "#000" }}>
+      linkedin.com/in/nil-domene-esteban-29599a106
+      </Text>
+      <LittleSeparator />
+      <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
+      <LittleSeparator />
+     <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
         Github
       </Text>
       <View style={{ height: 10 }} />
@@ -94,6 +106,7 @@ export default function App(props) {
       https://www.github.com/nilde
       </Text>
       <LittleSeparator />
+      
       <View style={{ height: 1, backgroundColor: "#EDEDED", width: "95%", alignSelf: "center" }} />
       <LittleSeparator />
       <Text style={{ fontWeight: "400", textAlign: "left", width: "95%", alignSelf: "center", fontFamily: "Montserrat", fontSize: 14, color: "gray" }}>
