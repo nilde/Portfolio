@@ -4,7 +4,7 @@ import MediumSeparator from '../MediumSeparator'
 import BigSeparator from '../BigSeparator'
 import Footer from '../Footer'
 import Test from '../../../images/apps/Guessmoji/1.jpeg'
-import YellowLogo from '../../../images/logo_yellow_small.svg'
+import YellowLogo from '../../../images/logo_yellow_small.png'
 import Close from '../../../images/close.svg'
 import { Gradient } from 'react-gradient';
 import { Component } from 'react'

@@ -13,12 +13,12 @@ function Footer(props) {
         source={footerWave}
         style={{ width: "100%", height: 100, resizeMode: "cover" }}
       />
-      <View style={{ marginTop: -2, width: "100%", backgroundColor: "#1d1d1d" }}>
+      <View style={{ marginTop: -20, width: "100%", backgroundColor: "#1d1d1d" }}>
         <Image
-          style={{ marginLeft: 30, width: 35, height: 35, resizeMode: "contain" }}
+          style={{ marginLeft: 30, width: 50, height: 35, resizeMode: "contain" }}
           source={whiteLogo}
         />
-        <MediumSeparator />
+        <BigSeparator />
         <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "700", fontSize: 18, alignSelf: "flex-start", marginLeft: 30 }}>
           Esta web ha sido desarrollada con
         </Text>
@@ -170,6 +170,35 @@ function Footer(props) {
           </Text>
         </Pressable>
         <LittleSeparator />
+        <BigSeparator />
+        <View style={{}}>
+          <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "700", fontSize: 18, alignSelf: "flex-start",marginLeft:30 }}>
+              ¡Gracias por tu tiempo!
+            </Text>
+            <LittleSeparator />
+        <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "400", fontSize: 14, alignSelf: "flex-start",marginLeft:30 }}>
+                Made with 💛 
+              </Text>
+              <LittleSeparator />
+        <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "400", fontSize: 14, alignSelf: "flex-start",marginLeft:30 }}>
+                Nil Domene Esteban
+              </Text>
+              <LittleSeparator />
+              <Pressable
+              onPress={(e) => {
+          window.location.href = "mailto:nildomene@gmail.com";
+          e.preventDefault();
+        }}
+        onLongPress={(e) => {
+          window.location.href = "mailto:nildomene@gmail.com";
+          e.preventDefault();
+        }}
+            >
+        <Text style={{ fontFamily: "Montserrat", color: "#fff", fontWeight: "400", fontSize: 14, alignSelf: "flex-start",marginLeft:30 }}>
+                nildomene@gmail.com
+              </Text>
+              </Pressable>
+        </View>
         <BigSeparator />
       </View>
     </View>

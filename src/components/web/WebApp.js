@@ -16,6 +16,7 @@ import footerWave from '../../images/footer-wave.svg'
 import BigSeparator from './BigSeparator'
 import TopBar from './TopBar'
 import YouTube from 'react-youtube';
+import FooterLarge from './FooterLarge';
 
 const TOTAL_WIDTH = window.innerWidth;
 const TOTAL_HEIGHT = window.innerHeight
@@ -39,11 +40,13 @@ function App() {
         Mira el siguiente vídeo y descubre cómo explorar mí curriculum.
       </Text>
       <MediumSeparator />
-      <View style={{alignSelf:"center",width:window.innerWidth*0.6,height:400,borderRadius:20,backgroundColor:"red",overflow:"hidden"}}>
+      <View style={{alignSelf:"center",width:window.innerWidth*0.6,height:400,borderRadius:20,backgroundColor:"#f2f2f2",overflow:"hidden"}}>
       <YouTube videoId={"acDQBLPDQoc"} opts={{ height:400 , width: window.innerWidth*0.6,borderRadius:20 }} onReady={() => { }} />
       </View>
       <MediumSeparator />
+      <FooterLarge />
       </View>
+
 <TopBar />
 
 
